@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <div id="logo">WeatherBoard</div>
+        <div id="search-bar">
+            <select id="location-select">
+                <!-- <option value="">Select a Location</option> -->
+                <option value="New York">Select a Location</option>
+                <option value="New York">New York</option>
+                <option value="London">London</option>
+                <option value="Tokyo">Tokyo</option>
+                <option value="Sydney">Sydney</option>
+                <option value="Paris">Paris</option>
+            </select>
+        </div>
+        <div id="user-profile">Profile</div>
+    </header>
+
+    <main>
+        <section id="weather-cards" class="card-container">
+            <div id="weather-info" class="weather-frame">
+                <!-- Dynamic weather information will be displayed here -->
+            </div>
+        </section>
+
+        <section id="weather-map">
+            <!-- Map integration here -->
+        </section>
+
+        <section id="weather-alerts">
+            <!-- Alerts and details here -->
+        </section>
+        <section id="weather-cards" class="card-container">
+            <!-- Existing weather info card -->
+       
+        
+            <!-- New cards -->
+            <div class="card" id="aqi-card">AQI: <span id="aqi-value">--</span></div>
+            <div class="card" id="wind-card">Wind: <span id="wind-value">--</span></div>
+            <div class="card" id="pressure-card">Pressure: <span id="pressure-value">--</span></div>
+            <div class="card" id="feels-like-card">Feels Like: <span id="feels-like-value">--</span></div>
+        </section>
+        
+    </main>
+
+    <aside>
+        <button id="toggle-nav">☰ Menu</button>
+        <nav id="side-nav" class="hidden">
+            <ul>
+                <li>Home</li>
+                <li>Forecast</li>
+                <li>Historical Data</li>
+                <li>Settings</li>
+            </ul>
+        </nav>
+    </aside>
+
+    <footer>
+        <p>About WeatherBoard...</p>
+    </footer>
+</body>
+</html>
